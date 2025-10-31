@@ -1,21 +1,15 @@
+import { Outlet } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import HeroSection from "./components/HeroSection";
-import Features from "./components/Features";
-import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
 
-function App() {
+export default function App() {
   return (
-    <div className="bg-gray-50 min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-gray-50">
       <Navbar />
       <main className="flex-1">
-        <HeroSection />
-        <Features />
-        <ContactForm />
+        <Outlet />
       </main>
       <Footer />
     </div>
   );
 }
-
-export default App;

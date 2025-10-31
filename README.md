@@ -38,4 +38,4 @@ Open http://localhost:5173
 ## Customize
 - Update theme in `tailwind.config.js` (colors, fonts).
 - Replace content and structure in `src/pages/*` and `src/components/*`.
-- Add images in `/public` and reference as `/your-image.png.
+- Add images in `/public` and reference as `/your-image.png`.

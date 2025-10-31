@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html { font-family: theme('fontFamily.sans'); }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-md bg-brand-600 px-4 py-2 text-white font-medium shadow hover:bg-brand-700 transition;
+  }
+  .container-narrow {
+    @apply max-w-6xl mx-auto px-4;
+  }
+}
